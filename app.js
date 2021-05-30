@@ -301,7 +301,7 @@ app.get(
     );
     const leaderBoard = arrangePlayersScoreVise(totalScoreOfEachPlayer);
     const outputFormat = convertOutputFormat(leaderBoard);
-    console.log(outputFormat);
+    response.send(outputFormat);
   }
 );
 
