@@ -1,0 +1,47 @@
+POST http://localhost:3000/user/register/
+Content-Type: application/json
+
+{
+    "name": "sairam",
+    "age": 21,
+    "location": "palakol",
+    "emailId": "person@gmail.com",
+    "phoneNumber": "1122334455",
+    "password": "sai@123"
+}
+
+###
+
+POST http://localhost:3000/user/login/
+Content-Type: application/json
+
+{
+    "phoneNumber": 1122334455,
+    "password": "sai@123"
+}
+
+###
+
+POST http://localhost:3000/user/update/
+Content-Type: application/json
+
+{
+    "phoneNumber": 1122334455
+}
+
+###
+
+GET http://localhost:3000/games/list/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6MTEyMjMzNDQ1NSwiaWF0IjoxNjIyMzYyOTQyfQ.I6eNjT8iNmx0hesG3umsT2NYbXBV4lMX0BV1R0j1azY
+
+###
+
+POST http://localhost:3000/admin/login/
+Content-Type: application/json
+
+{
+    "phoneNumber": 123456789,
+    "password": "admin"
+}
+
+###
